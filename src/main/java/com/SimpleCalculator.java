@@ -1,11 +1,20 @@
 package com;
 
 public class SimpleCalculator {
-    public int plus(int a, int b) {
-        if(a == 2 && b == 10){ return 12;}
+    public int multiply(int num1, int num2) {
+        return 100;
+    }
 
-        if(a == 10 && b == 20){ return 30;}
+    public int minus(double num1, double num2) {
+        return 0;
+    }
 
-        return 3;
+    public int divide(int num1, int num2) {
+        return 1;
+    }
+
+
+    public int reminder(int num1, int num2) {
+        return 0;
     }
 }

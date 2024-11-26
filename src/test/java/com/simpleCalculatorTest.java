@@ -8,29 +8,40 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class simpleCalculatorTest {
     @Test
-    @DisplayName("1 + 2 = 3")
+    @DisplayName("multiply")
     public void t1(){
         SimpleCalculator simpleCalculator = new SimpleCalculator();
-        int rs = simpleCalculator.plus(1,2);
+        int rs = simpleCalculator.multiply(10,10);
 
-        assertEquals(3, rs);
+        assertEquals(100, rs);
     }
 
     @Test
-    @DisplayName("2 + 10 = 12")
+    @DisplayName("minus")
     public void t2(){
         SimpleCalculator simpleCalculator = new SimpleCalculator();
-        int rs = simpleCalculator.plus(2,10);
+        int rs = simpleCalculator.minus(10,10);
 
-        assertEquals(12, rs);
+        assertEquals(0, rs);
     }
 
     @Test
-    @DisplayName("10 + 20 = 30")
+    @DisplayName("divide")
     public void t3(){
         SimpleCalculator simpleCalculator = new SimpleCalculator();
-        int rs = simpleCalculator.plus(10,20);
+        int rs = simpleCalculator.divide(10,10);
 
-        assertEquals(30, rs);
+        assertEquals(1, rs);
     }
+
+    @Test
+    @DisplayName("reminder")
+    public void t4(){
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.reminder(10,10);
+
+        assertEquals(0, rs);
+    }
+
+
 }
