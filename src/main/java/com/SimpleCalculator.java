@@ -2,19 +2,19 @@ package com;
 
 public class SimpleCalculator {
     public int multiply(int num1, int num2) {
-        return 100;
+        return num1 * num2;
     }
 
-    public int minus(double num1, double num2) {
-        return 0;
+    public int minus(int num1, int num2) {
+        return num1 - num2;
     }
 
     public int divide(int num1, int num2) {
-        return 1;
+        return num1 / num2;
     }
 
 
     public int reminder(int num1, int num2) {
-        return 0;
+        return num1 % num2;
     }
 }

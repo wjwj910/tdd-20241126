@@ -4,7 +4,7 @@ package com;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class simpleCalculatorTest {
     @Test
@@ -13,7 +13,8 @@ public class simpleCalculatorTest {
         SimpleCalculator simpleCalculator = new SimpleCalculator();
         int rs = simpleCalculator.multiply(10,10);
 
-        assertEquals(100, rs);
+        //assertEquals(100, rs);
+        assertThat(rs).isEqualTo(100);
     }
 
     @Test
@@ -22,7 +23,8 @@ public class simpleCalculatorTest {
         SimpleCalculator simpleCalculator = new SimpleCalculator();
         int rs = simpleCalculator.minus(10,10);
 
-        assertEquals(0, rs);
+        //assertEquals(0, rs);
+        assertThat(rs).isEqualTo(0);
     }
 
     @Test
@@ -31,7 +33,8 @@ public class simpleCalculatorTest {
         SimpleCalculator simpleCalculator = new SimpleCalculator();
         int rs = simpleCalculator.divide(10,10);
 
-        assertEquals(1, rs);
+        //assertEquals(1, rs);
+        assertThat(rs).isEqualTo(1);
     }
 
     @Test
@@ -40,7 +43,8 @@ public class simpleCalculatorTest {
         SimpleCalculator simpleCalculator = new SimpleCalculator();
         int rs = simpleCalculator.reminder(10,10);
 
-        assertEquals(0, rs);
+        //assertEquals(0, rs);
+        assertThat(rs).isEqualTo(0);
     }
 
 
