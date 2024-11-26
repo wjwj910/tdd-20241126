@@ -8,13 +8,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class simpleCalculatorTest {
     @Test
-    @DisplayName("multiply")
+    @DisplayName("plus")
     public void t1(){
         SimpleCalculator simpleCalculator = new SimpleCalculator();
-        int rs = simpleCalculator.multiply(10,10);
+        int rs = simpleCalculator.plus(10,10);
 
-        //assertEquals(100, rs);
-        assertThat(rs).isEqualTo(100);
+        //assertEquals(0, rs);
+        assertThat(rs).isEqualTo(20);
     }
 
     @Test
@@ -28,8 +28,18 @@ public class simpleCalculatorTest {
     }
 
     @Test
-    @DisplayName("divide")
+    @DisplayName("multiply")
     public void t3(){
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.multiply(10,10);
+
+        //assertEquals(100, rs);
+        assertThat(rs).isEqualTo(100);
+    }
+
+    @Test
+    @DisplayName("divide")
+    public void t4(){
         SimpleCalculator simpleCalculator = new SimpleCalculator();
         int rs = simpleCalculator.divide(10,10);
 
@@ -39,7 +49,7 @@ public class simpleCalculatorTest {
 
     @Test
     @DisplayName("reminder")
-    public void t4(){
+    public void t5(){
         SimpleCalculator simpleCalculator = new SimpleCalculator();
         int rs = simpleCalculator.reminder(10,10);
 
